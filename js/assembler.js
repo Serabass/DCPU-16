@@ -130,6 +130,8 @@ var Assembler = {
         atom.literal = parseInt(operand, 10);
       } else if (operand.match(/^0x[0-9a-fA-F]+$/g)) {
         atom.literal = parseInt(operand, 16);
+      } else if (operand.match(/^0b[01]{1,16}$/g)) {
+        atom.literal = parseInt(operand.substr(2), 2);
       } else if (this.REGISTERS[operand] !== undefined) {
         atom.register = this.REGISTERS[operand];
       } else if (operand.match(/^[a-zA-Z_.][a-zA-Z_.0-9]*$/)) {
