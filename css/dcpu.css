@@ -392,3 +392,56 @@ button:disabled:active, button:disabled {
     font-weight: bold;
     color: #900;
 }
+
+
+
+.processors {
+    padding: 10px;
+    width: 176px;
+    float: left;
+}
+
+.processor {
+    padding: 10px;
+    height: 45px;
+    width: 176px;
+    float: left;
+}
+
+
+.canvas {
+    width: 670px;
+    height: 500px;
+    border: 1px solid black;
+    float: left;
+}
+
+#canvas {
+    width: 670px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+.processor .bit {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.processor:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.processor .bit:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.processor .bit.hl {
+    background: rgb(41, 6, 216);
+    color: white;
+}
