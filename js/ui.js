@@ -472,8 +472,11 @@ function updateSizes() {
         }
     }
 
-    ge("tab0_content").style.height = (height - 48 * 2 - 10) + "px";
-    ge("tab1_content").style.height = (height - 48 * 2 - 10) + "px";
+    // ge("tab0_content").style.height = (height - 48*2 - 10) + "px";
+    // ge("tab1_content").style.height = (height - 48*2 - 10) + "px";
+
+    ge("tab0_content").style.height = "300px";
+    ge("tab1_content").style.height = "300px";
 
     var vis_lines = parseInt((height - ge("memory_wrapper").offsetTop - 4) / 19);
     ge("memory_wrapper").style.height = vis_lines * 19 + "px";
